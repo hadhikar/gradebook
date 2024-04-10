@@ -46,6 +46,26 @@ In the `<properties>` section, add the build configuration:
     </plugins>
 </build>
 
-This configuration excludes the Lombok library from the build process, as it is only needed during development and not in the final packaged application. 
-
+This configuration excludes the Lombok library from the build process, as it is only needed during development and not in the final packaged application.
 ```
+
+# Adding a New Module 
+
+Follow these steps to add a new module to your project:
+
+1. Right-click on the project root directory and select `New -> Module`.
+2. Provide a suitable name for the module.
+3. Choose the directory where you want to save the module. This should be under the parent directory.
+4. Specify a unique Group ID for your module. Ensure that it matches the Group ID of the parent project.
+5. Click `Finish`.
+6. Repeat these steps for each module you want to add to the project.
+7. After adding your modules, ensure to delete the default source folder in the parent directory.
+8. Create an `application.properties` file in the `resources` directory located under `src/main/resources`.
+9. Update the `application.properties` file in each module with the necessary configuration details. These may include:
+    1. Database connection settings: Specify the URL, username, and password for your database connection.
+    2. Server port: Define the port on which your application will run.
+    3. Other module-specific properties: Include any additional properties that are specific to each module.
+
+To add dependencies in the `pom.xml` files, you can visit the [Spring Initializr](https://start.spring.io/) website:
+- Choose the correct project type, language, and Spring Boot version, and add the dependencies you may need.
+- Then click on `Explore` and you can copy and paste the needed dependencies into the modules.
