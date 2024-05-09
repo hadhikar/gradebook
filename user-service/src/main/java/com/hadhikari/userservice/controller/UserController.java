@@ -1,6 +1,6 @@
 package com.hadhikari.userservice.controller;
 
-import com.hadhikari.userservice.model.User;
+import com.hadhikar.database_service.model.User;
 import com.hadhikari.userservice.service.UserService;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,7 +1,7 @@
 package com.hadhikari.userservice.service;
 
-import com.hadhikari.userservice.model.User;
-import com.hadhikari.userservice.repository.UserRepository;
+import com.hadhikar.database_service.model.User;
+import com.hadhikar.database_service.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 

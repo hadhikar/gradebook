@@ -1,4 +1,5 @@
-package com.hadhikari.userservice.model;
+package com.hadhikar.database_service.model;
+
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

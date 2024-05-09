@@ -8,6 +8,7 @@
         <module>user-service</module>
         <module>subject-service</module>
         <module>exam-service</module>
+        <module>database-service</module>
     </modules>
 
     <parent>
